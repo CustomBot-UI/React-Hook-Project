@@ -64,4 +64,30 @@ Each project should:
 
 ## Getting Started
 
-Project setup will be added as the apps are created. The final README will document the install and start commands for each project.
+### React + Vite app
+
+Create and run the app with:
+
+```bash
+npm create vite@latest my-react-app -- --template react
+cd my-react-app
+npm install
+npm run dev -- --host 0.0.0.0
+```
+
+This starts the Vite development server, usually on:
+
+- http://localhost:5173/
+
+If port 5173 is already occupied, Vite will automatically choose the next available port, such as 5174.
+
+### Project structure
+
+The main app lives in the generated Vite project under `my-react-app/` and includes the standard React + Vite starter files:
+
+- `src/App.jsx`
+- `src/main.jsx`
+- `src/index.css`
+- `vite.config.js`
+
+Each future hook project can be added as a separate app or module inside this workspace.
