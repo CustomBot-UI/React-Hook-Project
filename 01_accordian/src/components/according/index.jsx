@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import data from './data';
+import './style.css';
 
 export default function Accordian() {
   const [selected, setSelected] = useState(null);
