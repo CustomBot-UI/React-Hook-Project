@@ -49,3 +49,11 @@
     margin: 0 0.2rem;
     cursor: pointer;
 }
+.hide-current-image{
+    display:none;
+
+}
+.update-current-indicator{
+    background-color:gray;
+
+}
