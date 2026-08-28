@@ -5,11 +5,11 @@ import "./style.css";
 export default function StarRating({noOfStars = 5}) {
   const [rating, setRating] = useState(0);
   const [hover, setHover] = useState(0);
-  function handleClick(index) {
-    setRating(index)
+  function handleClick(getIndex) {
+    setRating(getIndex)
   }
-  function handleMouseEnter(index) {
-    setHover(index)
+  function handleMouseEnter(getIndex) {
+    setHover(getIndex)
   }
   function handleMouseLeave() {
     setHover(rating)
@@ -22,14 +22,14 @@ export default function StarRating({noOfStars = 5}) {
       <h2>Star Rating</h2>
       {
         [...Array(noOfStars)].map((_, index) => {
-            index += 1;
+            index+=1;
 
             return <FaStar 
             key={index}
-            className = {index <= (hover|| rating) ? "star selected" : "star Not Selected"}
-            onClick= {() => handleClick(index + 1)}
-            onMouseEnter= {() => handleMouseEnter(index + 1)}
-            onMouseLeave= {() => handleMouseLeave(index + 1)}
+            className = {index <= (hover|| rating) ? "Selected" : "NotSelected"}
+            onClick= {() => handleClick(index)}
+            onMouseEnter= {() => handleMouseEnter(index)}
+            onMouseLeave= {() => handleMouseLeave()}
             size={40}
             />
         })
