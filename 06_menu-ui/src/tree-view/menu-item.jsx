@@ -1,3 +1,5 @@
 export default function MenuItem({item}){
-    return <div>Menu Item</div>
+    return <li>
+        <p>{item.lable}</p>
+    </li>
 }

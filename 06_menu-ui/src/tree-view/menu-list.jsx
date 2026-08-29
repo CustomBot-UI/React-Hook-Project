@@ -1,12 +1,12 @@
 import MenuItem from "./menu-item";
 
-export default function MenuList ({list = []}){
+export default function MenuList({ list = [] }) {
 
-    return <div className="menu-list-container">
+    return <ul className="menu-list-container">
         {
             list && list.length ?
-            list.map(listItem=> <MenuItem item = {listItem} />)
-            : null
+                list.map(listItem => <MenuItem item={listItem} />)
+                : null
         }
-    </div>
+    </ul>
 }

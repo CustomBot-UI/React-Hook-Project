@@ -49,4 +49,4 @@ const menus = [
     },
 ];
 
-export default menu;
+export default menus;
