@@ -48,3 +48,5 @@ const menus = [
         ],
     },
 ];
+
+export default menu;
