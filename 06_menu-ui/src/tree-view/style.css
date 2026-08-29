@@ -16,5 +16,72 @@
     list-style: none;
     margin-top: 0px;
     margin-bottom: 0px;
+}
 
+.qr-card {
+    width: 420px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    padding: 24px 20px;
+    margin-top: 20px;
+}
+
+.qr-card h1 {
+    margin: 0 0 18px;
+    font-size: 1.8rem;
+    color: #1b1b1b;
+}
+
+.qr-input-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.qr-input {
+    flex: 1;
+    padding: 12px 14px;
+    border: 1px solid #d8dfe9;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.qr-input:focus {
+    border-color: #2d8cff;
+    box-shadow: 0 0 0 3px rgba(45, 140, 255, 0.12);
+}
+
+.qr-button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #2d8cff, #1b6eea);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.qr-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.qr-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 260px;
+    background: #f7f9fc;
+    border: 1px dashed #c7d3e2;
+    border-radius: 14px;
+    padding: 10px;
+}
+
+.qr-placeholder {
+    color: #7a8798;
+    font-size: 0.95rem;
+    text-align: center;
+    padding: 20px;
 }

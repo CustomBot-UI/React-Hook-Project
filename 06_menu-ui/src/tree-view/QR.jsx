@@ -6,28 +6,33 @@ export default function QRCodeGenerator() {
     const [input, setInput] = useState('');
 
     function handleGenerateQrCode() {
-        setQrCode(input);
+        setQrCode(input.trim());
     }
 
     return (
-        <div>
+        <div className="qr-card">
             <h1>QR Code Generator</h1>
-            <div>
+
+            <div className="qr-input-row">
                 <input
+                    className="qr-input"
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
                     type="text"
                     name="qr-code"
-                    placeholder="Enter Your Value Here!"
+                    placeholder="Enter text here"
                 />
-                <button disabled={!input.trim()} onClick={handleGenerateQrCode}>
+                <button className="qr-button" disabled={!input.trim()} onClick={handleGenerateQrCode}>
                     Generate
                 </button>
             </div>
-            <div>
+
+            <div className="qr-box">
                 {qrCode ? (
-                    <QRCode id="qr-code-value" value={qrCode} size={400} bgColor="#fff" />
-                ) : null}
+                    <QRCode id="qr-code-value" value={qrCode} size={220} bgColor="#ffffff" />
+                ) : (
+                    <div className="qr-placeholder">Your QR code will appear here</div>
+                )}
             </div>
         </div>
     );

@@ -6,7 +6,7 @@ import QRCodeGenerator from './tree-view/QR';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App app-layout">
       <TreeView menus={menus} />
       <QRCodeGenerator />
     </div>
