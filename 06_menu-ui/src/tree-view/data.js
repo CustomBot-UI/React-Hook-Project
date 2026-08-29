@@ -10,14 +10,16 @@ const menus = [
             {
                 label: "Details",
                 to: "details",
-            },
-            {
-                label: "Location",
-                to: "location",
                 children: [
                     {
-                        label: "City",
-                        to: "city",
+                        label: "Location",
+                        to: "location",
+                        children: [
+                            {
+                                label: "City",
+                                to: "city",
+                            },
+                        ],
                     },
                 ],
             },
