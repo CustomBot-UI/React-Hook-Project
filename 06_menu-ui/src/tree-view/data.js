@@ -44,6 +44,13 @@ const menus = [
                     {
                         label: "Register",
                         to: "register",
+                        children:[
+                            {
+                                label: "Create Account",
+                                to: '',
+
+                            }
+                        ]
                     },
                 ],
             },
