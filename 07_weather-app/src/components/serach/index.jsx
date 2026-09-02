@@ -5,12 +5,11 @@ export default function Search({ search, setSearch, handleSearch }) {
         <input type="text"
             placeholder="Search..."
             name="search"
-            value={search}
+            value={search} 
             onChange={(event) => setSearch(event.target.value)}
         />
-        <button className="search-btn" onClick={handleSearch}>
+        <button onClick={handleSearch}>
             Search Weather
         </button>
-        Search
     </div>);
 }
